@@ -2,6 +2,7 @@
     --links--nav--size: 20px;
     --link--accent-color: purple;
     --primary-link-color-nav: white;
+    --dropdown--menu__color: rgba(255, 255, 255, .4);
 }
 
 /*body of nav*/
@@ -68,6 +69,9 @@ a.nav-btn.active-nav-btn {
 
 /*greet user*/
 .greet-user {
+    display: flex;
+    align-items: center;
+    gap: 20px;
     font-size: var(--links--nav--size);
     color: var(--primary-link-color-nav);
 }
@@ -75,6 +79,17 @@ a.nav-btn.active-nav-btn {
 .greet-user span {
     font-style: italic;
     color: var(--link--accent-color);
+}
+
+.greet-user-img {
+    display: flex;
+    width: 100px;
+    height: 100px;
+}
+
+.greet-user-img img{
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 /*animation*/
@@ -154,4 +169,123 @@ a.dropdown-btn:hover {
 /* Change background color on hover for the dropdown trigger */
 .dropdown:hover .dropdown-btn {
     background-color: orange;
+}
+
+
+
+
+/*---------------------NAVIGATION RESPONSIVE MOBILE-------------------*/
+
+.visible-menu {
+    display: block;
+}
+.invisible-menu {
+    display: none;
+}
+
+.toggle_btn img {
+    width: 40px;
+    height: 40px;
+}
+
+.toggle_btn {
+    cursor: pointer;
+    display: none;
+}
+
+
+/*dropdown-menu*/
+/*dropdown_menu*/
+
+.dropdown_menu {
+    display: none;
+    margin-top: 20px;
+    position: absolute;
+    padding: 20px;
+    right: 0px;
+    top: 100px;
+    width: 300px;
+    background: var(--dropdown--menu__color);
+    z-index: 5; 
+    border-radius: 0px 0px 20px 20px;
+}
+
+/*colors*/
+.dropdown_menu li a {
+    color: var(--general-p-color);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*When we click on the toggle btn we add the class to display the menu (mobile)*/
+.dropdown_menu.close {
+    display: none;
+}
+.dropdown_menu.open {
+    display: block;
+}
+
+
+.dropdown_menu li {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+    width: 50%;
+    background-color: var(--btn-primary);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+
+/*Navigation pour les telephones*/
+
+@media (max-width: 1000px) {
+    /*logo*/
+    .logo__image {
+        width: 80px;
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+    .logo__title {
+        display: block;
+        width: 50%;
+    }
+    /*menu content*/
+    .greet-user,
+    .contact-us .btn,
+    .page-links {
+        display: none;
+    }
+
+    .toggle_btn {
+        display: block;
+    }
+    /*dropdown-connection btns*/
+
+     .dropdown_menu .action_btn {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 10px;
+    } 
+}
+
+@media (max-width: 550px) {
+
+    .dropdown_menu {
+       margin-top: 0;
+       left: 0px;
+       right: 0px;
+       top: 140px;
+       width: unset;
+   } 
+
 }
