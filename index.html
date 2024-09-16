@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/scrolling.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <div class="logo-img"><img src="assets/img/nav/logo.png" alt="logo-deluxe-car"></div>
+        </div>
+        <div class="page-links">
+            <a class="nav-btn" href="">About</a>
+            <a class="nav-btn" href="">Catalog</a>
+            <a class="nav-btn" href="">Team</a>
+            <a class="nav-btn" href="">Blog</a>
+        </div>
+        <div class="contact-us">
+              
+                <p class="greet-user">Hello, <span>Mihail</span></p>
+                <a class="btn" href="/logout">Disconnection</a>
+            
+        </div>
+    </nav>
+<main>
+        
+    <header>
+        <div class="structure">
+            <div class="header-section">
+                <div class="header-section__box">
+                    <div class="header-box__title">
+                        <h1>Deluuxe Location</h1>
+                    </div>
+                    <div class="header-box__sub-title">
+                        <h1>Nous offrons les meilleurs prix</h1>
+                    </div>
+                    <div class="header-box__buttons">
+                        <a href="" class="btn">Voir les offres</a>
+                        <a href="#reserve-sec" class="btn btn-no-bg" id="reserver-sec-btn">Réservez maintenant</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section__why-us flex-center-center">
+        <div class="structure">
+            <div class="container__why-us">
+                <div class="why-us__item">
+                    <div class="why-us__item--title">
+                        <h3>2K</h3>
+                    </div>
+                    <div class="why-us__item--subtitle">
+                        <h4>Membres inscrits</h4>
+                    </div>
+                </div>
+
+                <div class="why-us__item">
+                    <div class="why-us__item--title">
+                        <h3>15000+</h3>
+                    </div>
+                    <div class="why-us__item--subtitle">
+                        <h4>Inventaire vendu</h4>
+                    </div>
+                </div>
+
+                <div class="why-us__item">
+                    <div class="why-us__item--title">
+                        <h3>100%</h3>
+                    </div>
+                    <div class="why-us__item--subtitle">
+                        <h4>Prix ​​de vente reçu</h4>
+                    </div>
+                </div>
+
+                <div class="why-us__item">
+                    <div class="why-us__item--title">
+                        <h3>90%</h3>
+                    </div>
+                    <div class="why-us__item--subtitle">
+                        <h4>Clients satisfaits</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="reservation-section" id="reserve-sec">
+        <div class="structure">
+            <div class="reservation-boxes-container">             
+                    <div class="container__form-deals">
+                        <div class="deals__create-booking">
+                            <div class="create-booking__title">
+                                <h1>Réservez maintenant</h1>
+                            </div>
+                            <div class="create-booking__subtitle">
+                                <h3>Les meilleures réductions cette semaine</h3>
+                            </div>
+                            <div class="create-booking__link">
+                                <a href="{{base}}/booking/create" class="header-box_btn deals-link">Réservez</a>
+                            </div>
+                        </div>
+                        <div class="deals-box">
+                            <h1 class="deals-title">
+                                OBTENEZ 15% DE RABAIS SUR VOTRE LOCATION
+                            </h1>
+                            <div class="deals-img">
+                                <img src="assets/img/gallery/mercedes.jpg" alt="mercedes-img">                                   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    
+
+    <section class="section__newsletter flex-center-center">
+        <div class="structure">
+            <div class="newsletter__img-box--container">
+                <div class="newsletter__subtitle--title--box">
+                    <div class="newsletter__subtitle">
+                        <small>Soyez plus proche</small>
+                    </div>
+                    <div class="newsletter__title">
+                        <h1>Recevez les actualités en vous abonnant à notre infolettre</h1>
+                    </div>
+                    <form id="newsletterForm" method="post" action="{{base}}/newsletter/subscribe">
+                        <div class="newsletter__box" style="display: flex; gap: 5px;">
+                            <input type="email" name="email" class="newsletter__box--input" id="newsletter-email" placeholder="Enter your email..." required>
+                            <button type="submit" class="btn btn-box newsletter-btn" id="newsletter-btn">Subscribe</button>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="newsletter__img__box">
+                    <img src="assets/img/offers/offer.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="location-section">
+        <div class="structure">
+            <div class="location-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22366.70793810311!2d-73.58369795659821!3d45.51332974876609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a4d31166b3d%3A0xe16252d7fe06209e!2zVmlsbGUtTWFyaWUsIE1vbnRyw6lhbCwgUXXDqWJlYw!5e0!3m2!1sro!2sca!4v1720417585497!5m2!1sro!2sca" width="100%" height="450px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <section class="footer-section flex-column-center">
+        <div class="structure">
+            <footer class="footer-main">
+                <div class="logo-row">
+                    <div class="logo">
+                        <div class="logo-img">
+                            <img src="assets/img/nav/logo.png" alt="logo-deluxe-car">
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-columns">
+                    <div class="column">
+                        <div class="column-title">
+                            <h3>Services :</h3>
+                        </div>
+                        <div class="column-links">
+                            <a href="/catalogue" class="footer-link">Catalogue</a>
+                            <a href="/actualites" class="footer-link">Actualités</a>
+                            <a href="/a-propos" class="footer-link">À Propos</a>
+                            <a href="/contactez-nous" class="footer-link">Contactez-Nous</a>
+                            <a href="/blog" class="footer-link">Blog</a>
+                            <a href="/comment-encherir" class="footer-link">Comment Enchérir</a>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="column-title">
+                            <h3>À propos de nous :</h3>
+                        </div>
+                        <div class="column-links">
+                            <a href="/communiques-de-presse" class="footer-link">Communiqués de Presse</a>
+                            <a href="/temoignages" class="footer-link">Témoignages</a>
+                            <a href="/resultats-encheres" class="footer-link">Résultats des Enchères</a>
+                            <a href="/collections-speciales" class="footer-link">Collections Spéciales</a>
+                            <a href="/coin-des-collectionneurs" class="footer-link">Coin des Collectionneurs</a>
+                            <a href="/faq" class="footer-link">FAQ</a>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="column-title">
+                            <h3>Autre :</h3>
+                        </div>
+                        <div class="column-links">
+                            <a href="/evenements" class="footer-link">Événements</a>
+                            <a href="/lots-vedettes" class="footer-link">Lots Vedettes</a>
+                            <a href="/timbre-du-mois" class="footer-link">Timbre du Mois</a>
+                            <a href="/partenariats" class="footer-link">Partenariats</a>
+                            <a href="/plan-du-site" class="footer-link">Plan du Site</a>
+                            <a href="/politique-de-fonctionnement" class="footer-link">Politique de Fonctionnement</a>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="column-title">
+                            <h3>Autre :</h3>
+                        </div>
+                        <div class="column-links">
+                            <a href="/evenements" class="footer-link">Événements</a>
+                            <a href="/lots-vedettes" class="footer-link">Lots Vedettes</a>
+                            <a href="/timbre-du-mois" class="footer-link">Timbre du Mois</a>
+                            <a href="/partenariats" class="footer-link">Partenariats</a>
+                            <a href="/plan-du-site" class="footer-link">Plan du Site</a>
+                            <a href="/politique-de-fonctionnement" class="footer-link">Politique de Fonctionnement</a>
+                        </div>
+                    </div>
+
+
+                    <div class="column newsletter-column">
+                        <div class="newsletter__subtitle--title--box small-newsletter">
+                            <div class="newsletter__subtitle small-newsletter">
+                                <small>Soyez plus proche</small>
+                            </div>
+                            <div class="newsletter__title">
+                                <h1>Recevez les actualités en vous abonnant à notre infolettre</h1>
+                            </div>
+                            <div class="newsletter__box small-newsletter">
+                                <input type="text" class="newsletter__box--input" placeholder="Entrez votre email...">
+                                <button class="btn btn-box newsletter-btn">Soumettre</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </footer>    
+        </div>
+        <div class="footer-copyright">
+            <p>Copyright© 1995-2024 Lord Stampee. Tous droits réservés.</p>
+        </div> 
+    </section>
+</body>
+
+
+</html>
