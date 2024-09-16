@@ -1,4 +1,4 @@
-@import url(span-btns.css);
+
 :root{
     --btn-gradient: linear-gradient(90deg, #164a99 0%, #45E2C6 100%);
     --transparent-btn: rgba(255, 255, 255, 0.1);

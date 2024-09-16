@@ -1,5 +1,4 @@
 /*le tableau*/
-@import url(../componnents/table.css);
 .admin-interface {
     display: flex;
     flex-direction: column;

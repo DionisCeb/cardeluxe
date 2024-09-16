@@ -1,19 +1,16 @@
 /*components*/
 @import url(componnents/components.css);
-@import url(reservation-section.css);
-@import url(reservation-confirmation.css);
-@import url(location-section.css);
-/* @import url(admin-interface/booking-list.css);
-@import url(admin-interface/form-admin-section.css); */
+ @import url(admin-interface/booking-list.css);
+@import url(admin-interface/form-admin-section.css);
 
 /*admin interface*/
-@import url(admin-interface/admin-interface.css);
+/* @import url(admin-interface/admin-interface.css); */
 
 /*sections*/
 @import url(sections/sections.css);
 
 /*animations*/
-@import url(animations/animations.css);
+
 
 /*utils*/
 @import url(utils/utils.css);
