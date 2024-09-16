@@ -9,6 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
 }
 
 /*Why-us items*/
@@ -31,10 +32,14 @@
 }
 
 
-@media only screen and (max-width: 530px) {
+@media only screen and (max-width: 800px) {
     .container__why-us {
         flex-direction: column;
         gap: 50px;
+    }
+
+    .section__why-us {
+        min-height: 50dvh;
     }
 }
 

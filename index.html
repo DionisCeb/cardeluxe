@@ -7,6 +7,7 @@
     <title>Home</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/scrolling.js" defer></script>
+    <script src="assets/js/navigation.js" defer></script>
 </head>
 <body>
     <nav>
@@ -20,10 +21,31 @@
             <a class="nav-btn" href="">Blog</a>
         </div>
         <div class="contact-us">
-              
-                <p class="greet-user">Hello, <span>Mihail</span></p>
-                <a class="btn" href="/logout">Disconnection</a>
+            <div class="greet-user">
+                <p class="greet-user-text">Hello, <span>Mihail</span></p>
+                <a href="{{ base }}/user/edit">
+                    <div class="greet-user-img">
+                        <img src="assets/img/profile/miha.jpg" alt="image of {{session.name}}">
+                    </div>
+                </a>
+            </div>
+            <a class="btn" href="/logout">Disconnection</a>
             
+            
+        </div>
+
+        <div class="toggle_btn">
+            <img src="assets/img/nav/nav_bar.png" alt="nav_bar">
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="#" role="menuitem">About</a></li>
+            <li><a href="#" role="menuitem">Catalog</a></li>
+            <li><a href="#" role="menuitem">Team</a></li>
+            <li><a href="#" role="menuitem">Blog</a></li>
+            <div class="dropdown_menu--connection">
+                <a class="btn" href="/logout">Authentification</a>
+            </div>
         </div>
     </nav>
 <main>
@@ -33,14 +55,14 @@
             <div class="header-section">
                 <div class="header-section__box">
                     <div class="header-box__title">
-                        <h1>Deluuxe Location</h1>
+                        <h1>Deluuxe Rental</h1>
                     </div>
                     <div class="header-box__sub-title">
-                        <h1>Nous offrons les meilleurs prix</h1>
+                        <h1>We offer the best prices</h1>
                     </div>
                     <div class="header-box__buttons">
-                        <a href="" class="btn">Voir les offres</a>
-                        <a href="#reserve-sec" class="btn btn-no-bg" id="reserver-sec-btn">Réservez maintenant</a>
+                        <a href="" class="btn">Check the offers</a>
+                        <a href="#reserve-sec" class="btn btn-no-bg" id="reserver-sec-btn">Reserve Now</a>
                     </div>
                 </div>
             </div>
@@ -89,24 +111,24 @@
         </div>
     </section>
     
-    <section class="reservation-section" id="reserve-sec">
+    <section class="reservation-section height50" id="reserve-sec">
         <div class="structure">
             <div class="reservation-boxes-container">             
                     <div class="container__form-deals">
                         <div class="deals__create-booking">
                             <div class="create-booking__title">
-                                <h1>Réservez maintenant</h1>
+                                <h1>Book now</h1>
                             </div>
                             <div class="create-booking__subtitle">
-                                <h3>Les meilleures réductions cette semaine</h3>
+                                <h3>Best discounts this week</h3>
                             </div>
                             <div class="create-booking__link">
-                                <a href="{{base}}/booking/create" class="header-box_btn deals-link">Réservez</a>
+                                <a href="{{base}}/booking/create" class="btn btn-no-bg">Réservez</a>
                             </div>
                         </div>
                         <div class="deals-box">
                             <h1 class="deals-title">
-                                OBTENEZ 15% DE RABAIS SUR VOTRE LOCATION
+                                GET 15% OFF YOUR RENTAL
                             </h1>
                             <div class="deals-img">
                                 <img src="assets/img/gallery/mercedes.jpg" alt="mercedes-img">                                   
@@ -143,6 +165,7 @@
             </div>
         </div>
     </section>
+
     <section class="location-section">
         <div class="structure">
             <div class="location-container">

@@ -42,11 +42,26 @@
     min-height: 100dvh;
 }
 
-.height40 {
-    min-height: 40dvh;
+.height100 {
+    min-height: 100dvh;
+}
+.height90 {
+    min-height: 90dvh;
+}
+.height70 {
+    min-height: 70dvh;
+}
+.height60 {
+    min-height: 60dvh;
 }
 .height50 {
     min-height: 50dvh;
+}
+.height40 {
+    min-height: 40dvh;
+}
+.height30 {
+    min-height: 30dvh;
 }
 
 
@@ -59,3 +74,11 @@
 .structure {
     width: 80%;
 }
+
+
+@media only screen and (max-width: 600px) {
+    .structure {
+      width: 100% !important;
+      padding: 20px;
+    }
+  }

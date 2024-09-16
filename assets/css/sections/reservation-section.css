@@ -3,7 +3,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
 }
 
 
@@ -41,6 +40,10 @@ h1.deals-title {
     display: flex;
 }
 
+.create-booking__link a{
+    width: 100%;
+}
+
 .container__form-deals {
     display: flex;
     justify-content: space-between;
@@ -62,3 +65,20 @@ h1.deals-title {
     opacity: 0.6;
     border-radius: 10px;
 }
+
+
+
+@media only screen and (max-width: 600px) {
+    .container__form-deals {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .deals__create-booking {
+        align-items: center;
+    }
+    .deals-box {
+        width: 100%;
+    }
+  }
