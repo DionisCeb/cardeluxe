@@ -14,10 +14,19 @@
     height: 50dvh;
 }
 
+.flex {
+    display: flex;
+}
+
 /*flex-center*/
 .flex-center {
     display: flex;
     justify-content: center;
+}
+
+.flex-al {
+    display: flex;
+    align-items: center;
 }
 
 .flex-center-center {
