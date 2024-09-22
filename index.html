@@ -5,10 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <script src="assets/js/scrolling.js" defer></script>
-  <script type="module" crossorigin src="/cardeluxe/assets/index-CaVMccUb.js"></script>
-  <link rel="stylesheet" crossorigin href="/cardeluxe/assets/index-CtU-59OL.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <script type="module" crossorigin src="/cardeluxe/assets/index-F5RFBEAy.js"></script>
+  <link rel="stylesheet" crossorigin href="/cardeluxe/assets/index-D_E0miM1.css">
 </head>
 <body>
     <nav>
@@ -25,13 +24,13 @@
             <div class="greet-user">
                 <p class="greet-user-text">Hello, <span>Mihail</span></p>
             </div>
-            <a class="btn" href="/logout">Disconnection</a>
+            <!-- <a class="btn" href="/logout">Disconnection</a> -->
             
             
         </div>
 
         <div class="toggle_btn">
-            <img src="https://img.icons8.com/?size=100&id=36389&format=png&color=ffffff" alt="nav_bar">
+            <img src="https://img.icons8.com/?size=100&id=36389&format=png&color=808080" alt="nav_bar">
         </div>
 
         <div class="dropdown_menu">
@@ -46,14 +45,14 @@
     </nav>
 <main>
         
-    <header>
+    <!-- <header>
         <div class="structure">
             <div class="header-section">
                 <div class="header-section__box">
                     <div class="header-box__title">
                         <h1>Autoventa</h1>
                     </div>
-                    <div class="header-box__sub-title">
+                    <div class="header-box__sub-title typewriter">
                         <h1>We offer the best prices</h1>
                     </div>
                     
@@ -65,8 +64,74 @@
                 </div>
             </div>
         </div>
-    </header>
+    </header> -->
 
+    <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow-->
+    <section class="carousel-main-section">
+        <div class="carousel-container">
+            <div class="mySlides fade">
+                <img src="/cardeluxe/assets/bmw-m5-BaWNEq4U.jpg" style="width:100%">
+
+                    <div class="info-product-promoted">
+                            <div class="promoted-product__title typewriter">
+                                <h1>BMW M5 Competition</h1>
+                            </div>
+                            <div class="promoted-product__description typewriter">
+                                <p>New arrival in our collection</p>
+                            </div>
+                            <div class="header-box__buttons"><a href="" class="btn">Check the offers</a>
+                                <a href="#reserve-sec" class="btn btn-no-bg">Reserve Now</a>
+                            </div> 
+                                 
+                    </div>
+                </div>
+        
+            <div class="mySlides fade">
+              <img src="/cardeluxe/assets/audi-rs7-B9wVvOwP.jpg" style="width:100%">
+
+              <div class="info-product-promoted">
+                <div class="promoted-product__title typewriter">
+                    <h1>Audi RS7</h1>
+                </div>
+                <div class="promoted-product__description typewriter">
+                    <p>Limited offer! Take Your Audi today!</p>
+                </div>
+                <div class="header-box__buttons"><a href="" class="btn">Check the offers</a>
+                    <a href="#reserve-sec" class="btn btn-no-bg">Reserve Now</a>
+                </div>  
+            </div>
+            </div>
+        
+            <div class="mySlides fade">
+              <img src="/cardeluxe/assets/mercedes-benz-amg-gt-cphUoGkg.jpg" style="width:100%">
+
+              <div class="info-product-promoted typewriter">
+                <div class="promoted-product__title">
+                    <h1>Mercedes Benz Amg GT</h1>
+                </div>
+                <div class="promoted-product__description typewriter">
+                    <p>The fastest car in the UK. Be proud of yourself</p>
+                </div>
+                <div class="header-box__buttons"><a href="" class="btn">Check the offers</a>
+                    <a href="#reserve-sec" class="btn btn-no-bg">Reserve Now</a>
+                </div>  
+            </div>
+            </div>
+            <a class="prev">❮</a>
+            <a class="next">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+
+    
     <section class="brands-section flex-center height30">
         <div class="structure">
             <div class="brand-header">
@@ -142,6 +207,42 @@
         </div>
     </section>
 
+    <section class="search-car-section flex-center">
+        <div class="structure flex-col gap30">
+            <div class="search-car-header flex-column-center gap20">
+                <small>Our collection</small>
+                <h3>Find Your Dream Car Today</h3>
+            </div>
+            <div class="search-car-form-box">
+                <div class="search-car-item">
+                    <select name="makes" id="">
+                        <option value="make1">Any Makes</option>
+                        <option value="make1">make1</option>
+                        <option value="make2">make2</option>
+                        <option value="make3">make3</option>
+                        <option value="make4">make4</option>
+                        <option value="make5">make5</option>
+                    </select>
+            
+                    <select name="models" id="">
+                        <option value="model1">Any Models</option>
+                        <option value="model1">model1</option>
+                        <option value="model2">model2</option>
+                        <option value="model3">model3</option>
+                        <option value="model4">model4</option>
+                        <option value="model5">model5</option>
+                    </select>
+            
+                    <input type="text" value="Prices: All Prices" readonly>
+            
+                    <button class="btn btn-search-form">
+                        <i class="fa fa-search"></i> Search Cars
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="latest-arrivals flex-center">
         <div class="structure">
             <div class="latest-arrivals-title">
@@ -159,7 +260,7 @@
                     </div>
                     <button class="btn-view-vehicle">View Vehicle</button>
                 </div>
-                <div class="latest-arrival-car-card">
+                <div class="latest-arrival-car-card typewriter">
                     <h3>Mercedes-Benz AMG GT</h3>
                     <img src="/cardeluxe/assets/mercedes-benz-amg-gt-cphUoGkg.jpg" alt="Mercedes-Benz AMG GT">
                     <div class="car-details">
@@ -236,64 +337,6 @@
             </div>
         </div>
     </section>
-    
-    
-    
-    <section class="reservation-section height50" id="reserve-sec">
-        <div class="structure">
-            <div class="reservation-boxes-container">             
-                    <div class="container__form-deals">
-                        <div class="deals__create-booking">
-                            <div class="create-booking__title">
-                                <h1>Search now</h1>
-                            </div>
-                            <div class="create-booking__subtitle">
-                                <h3>Find Your Dream Car Today</h3>
-                            </div>
-                            <!-- <div class="create-booking__link">
-                                <a href="{{base}}/booking/create" class="btn btn-no-bg">Réservez</a>
-                            </div> -->
-                            <div class="search-car-form-box">
-                                <div class="search-car-item">
-                                    <select name="makes" id="">
-                                        <option value="make1">Any Makes</option>
-                                        <option value="make1">make1</option>
-                                        <option value="make2">make2</option>
-                                        <option value="make3">make3</option>
-                                        <option value="make4">make4</option>
-                                        <option value="make5">make5</option>
-                                    </select>
-                            
-                                    <select name="models" id="">
-                                        <option value="model1">Any Models</option>
-                                        <option value="model1">model1</option>
-                                        <option value="model2">model2</option>
-                                        <option value="model3">model3</option>
-                                        <option value="model4">model4</option>
-                                        <option value="model5">model5</option>
-                                    </select>
-                            
-                                    <input type="text" value="Prices: All Prices" readonly>
-                            
-                                    <button class="btn btn-search-form">
-                                        <i class="fa fa-search"></i> Search Cars
-                                    </button>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="deals-box">
-                            <h1 class="deals-title">
-                                GET 15% OFF YOUR RENTAL
-                            </h1>
-                            <div class="deals-img">
-                                <img src="/cardeluxe/assets/mercedes-DHhbGJbr.jpg" alt="mercedes-img">                                   
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
 
     <section>
         <div class="gallery">
@@ -350,7 +393,8 @@
             </div>
         </div>
     </section>
-    
+
+    </main>
 
     <!--Footer-->
     <section class="footer-section flex-column-center">
