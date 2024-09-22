@@ -14,8 +14,9 @@
 }
 
 .latest-arrivals-cars-container {
-    display: flex;
+    display: grid;
     gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .latest-arrival-car-card {
@@ -82,3 +83,18 @@
     background-color: #333;
 }
 
+
+
+/* For screens 1300px and smaller */
+@media (max-width: 1300px) {
+    .latest-arrivals-cars-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    }
+}
+
+/* For screens 600px and smaller */
+@media (max-width: 700px) {
+    .latest-arrivals-cars-container {
+        grid-template-columns: 1fr; /* 1 column */
+    }
+}

@@ -34,10 +34,10 @@
 
 .brands-container {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     gap: 20px;
-    flex-wrap: wrap;
 }
 
 .brand-item {
@@ -148,4 +148,36 @@
 
 .type-label i {
     font-size: 18px;
+}
+
+
+/* For screens 1300px and smaller */
+@media (max-width: 1300px) {
+    .types-container {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(3, 1fr); /* 2 columns */
+    }
+}
+
+@media (max-width: 900px) {
+    .types-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    }
+    .type-label {
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .brand-item {
+        width: 70%;
+        height: auto;
+    }
+}
+
+@media (max-width: 380px) {
+    .types-container {
+        grid-template-columns: repeat(1, 1fr); /* 2 columns */
+    }
 }

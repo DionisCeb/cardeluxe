@@ -48,3 +48,24 @@
     border-radius: 12px;
     overflow: hidden;
 }
+
+
+
+@media (max-width: 1250px) {
+    .find-us-container {
+        flex-direction: column;
+    }
+    .address-box {
+        width: 70%;
+    }
+    .map-box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 750px) {
+    .address-box {
+        width: 70%;
+        margin: 0 auto;
+    }
+}

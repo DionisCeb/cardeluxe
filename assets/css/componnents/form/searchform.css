@@ -10,6 +10,7 @@
 
 .search-car-item {
     display: flex;
+    width: 100%;
     align-items: center;
     gap: 15px;
 }
@@ -20,7 +21,7 @@
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 14px;
-    width: 180px;
+    width: 100%;
     -webkit-appearance: none; /* Remove default dropdown arrow */
     -moz-appearance: none;
     appearance: none;
@@ -38,6 +39,7 @@
 .btn-search-form {
     padding: 10px 30px;
     font-size: 16px;
+    width: 100%;
     font-weight: bold;
     border: none;
     border-radius: 25px !important;
@@ -65,4 +67,19 @@ select::-ms-expand {
 .search-car-item input:focus,
 .btn-search-form:focus {
     outline: none;
+}
+
+
+
+@media (max-width: 1060px) {
+    .search-car-item {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .search-car-item .btn-search-form{
+        padding: 10px;
+    }
 }
