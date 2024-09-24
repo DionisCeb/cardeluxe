@@ -65,7 +65,14 @@
 
 @media (max-width: 750px) {
     .address-box {
-        width: 70%;
+        width: 100%;
         margin: 0 auto;
+    }
+    .address-box p {
+        font-size: 14px;
+    }
+
+    .address-box button {
+        padding: 10px;
     }
 }
