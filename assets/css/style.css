@@ -39,11 +39,6 @@ img {
     width: 100%;
 }
 
-header {
-    display: flex;
-    justify-content: center;
-    height: 90vh;
-}
 .structure {
     width: 80%;
 }
