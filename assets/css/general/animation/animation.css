@@ -1,6 +1,7 @@
 @import url(hover.css);
 @import url(sliders/sliders.css);
 @import url(effects/effects.css);
+@import url(onscroll/onscroll.css);
 
 
 
@@ -62,11 +63,11 @@
 
 
 /* Define the fade-in animation */
-@keyframes fadeIn {
+/* @keyframes fadeIn {
     0% {
         opacity: 0;
     }
     100% {
         opacity: 1;
     }
-}
+} */
