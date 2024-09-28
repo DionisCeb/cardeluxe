@@ -3,6 +3,7 @@
     --link--accent-color: rgb(197, 143, 197);
     --primary-link-color-nav: rgb(196, 132, 53);
     --dropdown--menu__color: rgba(255, 255, 255, 0.6);
+    --nav-box-shadow: 0 4px 2px -2px #e1e1e1;
 }
 
 /*body of nav*/
@@ -11,6 +12,8 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    box-shadow: var(--nav-box-shadow);
+    margin-bottom: 10px;
 }
 
 
@@ -237,6 +240,7 @@ a.dropdown-btn:hover {
 
 .dropdown_menu li {
     padding: 10px;
+    color: var(--primary-link-color-nav);
     display: flex;
     align-items: center;
     justify-content: center;
