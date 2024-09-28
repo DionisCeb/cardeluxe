@@ -2,7 +2,7 @@
 
 /*Carousel section*/
 .carousel-main-section{
-    padding: 20px;
+    padding: 0px !important;
     background-color: var(--general__body--color);
 }
 /* Slideshow container */
