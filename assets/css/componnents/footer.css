@@ -9,6 +9,10 @@
     background-color: var(--footer-bg)
   }
   /*logo*/
+
+  .logo-img {
+    width: 100px;
+}
   .logo-row {
     display: flex;
   }
