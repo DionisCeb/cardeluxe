@@ -18,7 +18,7 @@ nav {
 
 
 /*Logo*/
-nav .logo {
+.logo {
     display: flex;
     width: 140px;
     height: 140px;
@@ -135,6 +135,9 @@ a.nav-btn.active-nav-btn {
 }
 
 /* Dropdown Trigger (a tag styled as a button) */
+
+
+
 .dropdown-btn {
     background-color: var(--primary-link);
     color: white;
@@ -206,6 +209,11 @@ a.dropdown-btn:hover {
 }
 
 /*btn-toggle-hamburger*/
+
+.hamburger {
+    display: none;
+}
+
 .hamburger .line {
     width: 25px;
     height: 1px;
@@ -294,10 +302,11 @@ a.dropdown-btn:hover {
 /*Navigation pour les telephones*/
 
 @media (max-width: 1000px) {
-    /*logo*/
-    .logo__image {
-        width: 80px;
+    /*btn-hamburger*/
+    .hamburger {
+        display: block;
     }
+    /*logo*/
 
     nav {
         justify-content: space-between;

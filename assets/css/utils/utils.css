@@ -52,6 +52,12 @@
     align-items: center;
 }
 
+
+.flex-right {
+    display: flex;
+    justify-content: right;
+}
+
 /*height*/
 .minheight100 {
     min-height: 100dvh;
@@ -92,6 +98,12 @@
 }
 .gap20 {
     gap: 20px;
+}
+.gap10 {
+    gap: 10px;
+}
+.gap5 {
+    gap: 5px;
 }
 
 /*structure*/

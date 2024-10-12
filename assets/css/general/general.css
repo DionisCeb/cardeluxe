@@ -5,7 +5,7 @@
 /*error css*/
 @import url(error/error.css);
 body {
-    background: var(--main-bg-color);
+    /* background: var(--main-bg-color); */
     min-height: 100dvh;
 }
 
