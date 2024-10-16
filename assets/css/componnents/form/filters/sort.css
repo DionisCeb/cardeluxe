@@ -2,7 +2,6 @@
 .sortbox {
     position: relative;
     width: 200px;
-    margin-right: 1rem;
   }
   
   .sortbox[open] {
@@ -10,10 +9,10 @@
   }
   
   .sortbox-selected {
-    padding: 10px;
+    padding: 20px;
     cursor: pointer;
     border-radius: 5px;
-    background-color: #ddd;
+    background-color: #e1e1e1;
     list-style: none;
   }
   

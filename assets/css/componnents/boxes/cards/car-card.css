@@ -139,4 +139,15 @@
 
 
 
+@media (max-width: 600px) {
+    .type-car {
+        width: 50%;
+    }
+    .card-car-footer {
+        overflow: overlay;
+    }
 
+    .card-car-footer__item {
+        padding: 10px;
+    }
+}

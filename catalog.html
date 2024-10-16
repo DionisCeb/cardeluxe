@@ -5,18 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <script type="module" src="assets/js/main.js" defer></script>
+    <!-- <script type="module" src="assets/js/main.js" defer></script> -->
     <title>Catalog</title>
 </head>
 <body>
     <!-- <div class="loader"></div> -->
     <nav>
         <div class="logo">
-            <div class="logo-img"><img src="assets/img/nav/autoventa3.png" alt="logo-deluxe-car"></div>
+            <a href="/">
+                <div class="logo-img"><img src="assets/img/nav/autoventa3.png" alt="logo-deluxe-car"></div>
+            </a>
         </div>
         <div class="page-links">
             <a class="nav-btn" href="">About</a>
-            <a class="nav-btn" href="">Catalog</a>
+            <a class="nav-btn" href="/catalog.html">Catalog</a>
             <a class="nav-btn" href="">Team</a>
             <a class="nav-btn" href="">Blog</a>
         </div>
@@ -45,7 +47,7 @@
     
     <header class="header-img">
         <img src="assets/img/gallery/collection.jpg" alt="our collection">
-        <div class="header-overlay">
+        <div class="header-overlay typewriter">
             <h1>Discover Our collection</h1>
             <nav class="breadcrumb">
                 <a href="#">Home</a> | <span>Cars Listing v1</span>
@@ -57,19 +59,19 @@
         <div class="filter-container">
             <form class="filter-form">
                 <select>
-                    <option value="" disabled selected>Choose Makes</option>
+                    <option value="" disabled selected>Makes</option>
                     <!-- Add more options -->
                 </select>
                 <select>
-                    <option value="" disabled selected>Choose Models</option>
+                    <option value="" disabled selected>Models</option>
                     <!-- Add more options -->
                 </select>
                 <select>
-                    <option value="" disabled selected>All Price</option>
+                    <option value="" disabled selected>Price</option>
                     <!-- Add more options -->
                 </select>
                 <select>
-                    <option value="" disabled selected>Choose Year</option>
+                    <option value="" disabled selected>Year</option>
                     <!-- Add more options -->
                 </select>
                 <button class="btn" type="submit">Search Now</button>
@@ -106,9 +108,7 @@
             
             
             </header>
-            <section class="catalog-show">
-                <div class="latest-arrivals-cars-container">
-                    
+            <section class="grid-container">              
 
                     <div class="card-car">
                         <div class="card-car-img">
@@ -673,14 +673,6 @@
                             <a href="">VIEW DETAILS <i>→</i></a>
                         </div>
                     </div>
-                
-    
-                    
-
-                    
-                    
-                    
-                </div>
             </section>
         </div>
     </section>
