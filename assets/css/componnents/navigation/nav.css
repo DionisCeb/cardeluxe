@@ -1,9 +1,11 @@
-:root {
+:root { 
+    --nav-bg: white;
     --links--nav--size: 20px;
     --link--accent-color: rgb(197, 143, 197);
-    --primary-link-color-nav: rgb(196, 132, 53);
+    --primary-link-color-nav: rgb(80, 80, 80);
     --dropdown--menu__color: rgba(255, 255, 255, 0.6);
     --nav-box-shadow: 0 4px 2px -2px #e1e1e1;
+   
 }
 
 /*body of nav*/
@@ -14,6 +16,8 @@ nav {
     align-items: center;
     box-shadow: var(--nav-box-shadow);
     margin-bottom: 10px;
+
+    background: var(--nav-bg);
 }
 
 
@@ -46,6 +50,10 @@ nav {
 
     animation: fadeIn 1.5s ease-in-out forwards; /* Duration and easing function */
     opacity: 0;
+}
+
+.nav-btn.active-link {
+    color: orange;
 }
 
 

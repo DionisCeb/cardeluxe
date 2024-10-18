@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <link rel="stylesheet" href="public/assets/css/style.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <!-- <script type="module" src="assets/js/main.js" defer></script> -->
+    <script type="module" src="assets/js/main.js" defer></script>
     <title>Catalog</title>
 </head>
 <body>
@@ -18,14 +19,15 @@
         </div>
         <div class="page-links">
             <a class="nav-btn" href="">About</a>
-            <a class="nav-btn" href="/catalog.html">Catalog</a>
+            <a class="nav-btn active-link" href="/catalog.html">Catalog</a>
             <a class="nav-btn" href="">Team</a>
             <a class="nav-btn" href="">Blog</a>
         </div>
         <div class="contact-us">
-            <div class="greet-user">
+            <!-- <div class="greet-user">
                 <p class="greet-user-text">Hello, <span>Mihail</span></p>
-            </div>
+            </div> -->
+            <a href="#" class="btn">Contact Us</a>
         </div>
 
         <div class="hamburger">
@@ -49,9 +51,6 @@
         <img src="assets/img/gallery/collection.jpg" alt="our collection">
         <div class="header-overlay typewriter">
             <h1>Discover Our collection</h1>
-            <nav class="breadcrumb">
-                <a href="#">Home</a> | <span>Cars Listing v1</span>
-            </nav>
         </div>
     </header>
     
@@ -677,6 +676,86 @@
         </div>
     </section>
     
+     <!--Footer-->
+     <footer class="footer-section flex-column-center">
+        <div class="structure">
+            <div class="footer-logo flex">
+                <div class="footer-logo--img">
+                    <img src="assets/img/nav/autoventa3.png" alt="autoventa logo">
+                </div>
+                <div class="footer--logo__title">
+                    Aut<span>o</span>venta
+                </div>
+            </div>
+            <div class="footer-container">  
+                <div class="footer-column">
+
+                    <div class="footer-description">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam debitis minus illum aliquid et voluptas.</p>
+                    </div>
+                    <div class="footer-contact-icons">
+                        <div class="flex gap20">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>+44 20 7123 4567</span>
+                        </div>
+                        <div class="flex gap20">
+                            <i class="fa-solid fa-location-crosshairs"></i>
+                            <span>489 King Street, London, UK</span>
+                        </div>
+                        <div class="flex gap20">
+                            <i class="fa-solid fa-inbox"></i>
+                            <span>autoventa@autoventa.uk</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <div class="footer--column__header">
+                        Quick Links
+                    </div>
+                    <div class="footer--column__links">
+                        <a href="#"><i class="fas fa-caret-right"></i> About Us</a>
+                        <a href="#"><i class="fas fa-caret-right"></i> Link2</a>
+                        <a href="#"><i class="fas fa-caret-right"></i> Link3</a>
+                        <a href="#"><i class="fas fa-caret-right"></i> Link4</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <div class="footer--column__header">
+                        Support Center
+                    </div>
+                    <div class="footer--column__links">
+                        <a href="#"><i class="fas fa-caret-right"></i> About Us</a>
+                        <a href="#"><i class="fas fa-caret-right"></i> Link2</a>
+                        <a href="#"><i class="fas fa-caret-right"></i> Link3</a>
+                        <a href="#"><i class="fas fa-caret-right"></i> Link4</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <div class="footer--column__header">
+                        Newsletter
+                    </div>
+                    <h3 class="mb-10">
+                        Subscribe to Our Newsletter To Get the Latest Update And News
+                    </h3>
+                    <div class="footer--newsletter">
+                        <input type="text" class="newsletter-input" placeholder="youremail@example.com">
+                        <button class="btn newsletter-btn" type="submit">
+                            Subscribe Now <i class="far fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© Copyright 2024 <span>Autoventa</span> All Rights Reserved.</p>
+            <div class="footer-social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>        
+    </footer>
     
 </body>
 </html>
