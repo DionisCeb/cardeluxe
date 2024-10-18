@@ -106,6 +106,33 @@
     gap: 5px;
 }
 
+/*margins*/
+.mb-5 {
+    margin-bottom: 5px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+.mb-15 {
+    margin-bottom: 10px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.mt-5 {
+    margin-bottom: 5px;
+}
+.mt-10 {
+    margin-bottom: 10px;
+}
+.mt-15 {
+    margin-bottom: 15px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+
 /*structure*/
 .structure {
     width: 80%;

@@ -6,10 +6,11 @@
 .filter-section {
     position: relative;
     padding: 20px 0;
-    margin-top: -100px; /* Adjust as per design */
+    margin-top: -100px;
     width: 100%;
-    /* margin: 0 auto; */
+    
     border-radius: 40px;
+
 }
 
 .filter-container {
@@ -23,6 +24,7 @@
     align-items: center;
 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
 }
 
 
@@ -32,6 +34,7 @@
     width: 100%;
     max-width: 1000px;
     gap: 20px;
+
 }
 
 .filter-form select {
@@ -40,11 +43,18 @@
     border: 1px solid #ddd;
     border-radius: 4px;
     background-color: #f9f9f9;
+
+    opacity: 0;
+    animation: fadeIn 3s ease-in-out forwards;
 }
 
 /*btn*/
 .filter-form .btn {
     width: 50%;
+    background: var(--main-card-car-color);
+
+    opacity: 0;
+    animation: fadeIn 3s ease-in-out forwards;
 }
 
 

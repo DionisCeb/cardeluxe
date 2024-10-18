@@ -12,7 +12,8 @@
     padding: 20px;
     cursor: pointer;
     border-radius: 5px;
-    background-color: #e1e1e1;
+    background: var(--main-card-car-color);
+    color: white;
     list-style: none;
   }
   
@@ -65,8 +66,10 @@
   
   .sortbox-list li {
     margin: 0;
-    padding: 10px 0;
+  
+    padding: 10px;
     border-bottom: 1px solid #ccc;
+    border-radius: 5px;
   }
   
   .sortbox-list li:last-child {
@@ -90,3 +93,8 @@
     color: #17a2b8;
   }
   
+
+  /*hover*/
+  .sortbox-list li:hover {
+    background-color: var(--main-card-car-color);
+  }
