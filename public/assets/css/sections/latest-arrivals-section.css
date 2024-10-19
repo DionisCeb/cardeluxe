@@ -94,7 +94,7 @@
 
 
 /* For screens 1300px and smaller */
-@media (max-width: 1300px) {
+@media (max-width: 1500px) {
     .latest-arrivals-cars-container {
         grid-template-columns: repeat(2, 1fr); /* 2 columns */
     }

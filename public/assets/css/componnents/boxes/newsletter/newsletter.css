@@ -20,9 +20,9 @@
     outline: none;
   }
   
-  .newsletter-btn {
+  .btn.newsletter-btn {
     padding: 10px 20px;
-    background-color: var(--footer-accent);
+    background: var(--footer-accent) !important;
     color: white;
     border: none;
     border-radius: 30px;
