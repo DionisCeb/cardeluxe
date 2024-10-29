@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <link rel="stylesheet" href="public/assets/css/style.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script type="module" src="assets/js/main.js" defer></script>
+    <title>Catalog</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="/">
+                <div class="logo-img"><img src="assets/img/nav/autoventa3.png" alt="logo-deluxe-car"></div>
+            </a>
+        </div>
+        <div class="page-links">
+            <a class="nav-btn" href="">About</a>
+            <a class="nav-btn" href="/catalog.html">Catalog</a>
+            <a class="nav-btn" href="">Team</a>
+            <a class="nav-btn" href="">Blog</a>
+        </div>
+        <div class="contact-us">
+            
+            <a href="#" class="btn">Contact Us</a>
+        </div>
+
+        <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="#" role="menuitem">About</a></li>
+            <li><a href="#" role="menuitem">Catalog</a></li>
+            <li><a href="#" role="menuitem">Team</a></li>
+            <li><a href="#" role="menuitem">Blog</a></li>
+            <div class="dropdown_menu--connection">
+                <a class="btn" href="/logout">Authentification</a>
+            </div>
+        </div>
+    </nav>
+    <main class="flex-center">
+        <div class="structure">
+            <div class="gallery-container">
+                <div class="main-image">
+                    <button class="carousel-btn prev-btn">❮</button>
+                    <img src="assets/img/gallery/collection/mercedes-benz-amg-gt.jpg" alt="Main Car Image" id="main-image">
+                    <button class="carousel-btn next-btn">❯</button>
+                </div>
+            
+                <div class="car_details_images-grid">
+                    <div class="car_detail_image">
+                        <img src="assets/img/gallery/collection/mercedes-benz-amg-gt.jpg" alt="Thumbnail 1">
+                    </div>
+                    <div class="car_detail_image">
+                        <img src="assets/img/gallery/collection/audi-rs7.jpg" alt="Thumbnail 2">
+                    </div>
+                    <div class="car_detail_image">
+                        <img src="assets/img/gallery/collection/ford-mustang.jpg" alt="Thumbnail 3">
+                    </div>
+                    <div class="car_detail_image">
+                        <img src="assets/img/gallery/collection/bmw-m5.jpg" alt="Thumbnail 4">
+                    </div>
+                    <div class="car_detail_image">
+                        <div class="car_detail_image-overlay">
+                            <span>Images (5)</span>
+                            <img src="assets/img/gallery/collection/types/coupe.jpg" alt="Thumbnail 5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <script>
+        // Array of all image paths for the carousel
+        // Array of all image paths for the carousel
+        const images = [
+            "assets/img/gallery/collection/mercedes-benz-amg-gt.jpg",
+            "assets/img/gallery/collection/audi-rs7.jpg",
+            "assets/img/gallery/collection/ford-mustang.jpg",
+            "assets/img/gallery/collection/bmw-m5.jpg",
+            "assets/img/gallery/collection/types/coupe.jpg"
+        ];
+
+        // Current image index
+        let currentIndex = 0;
+
+        // DOM elements
+        const mainImage = document.getElementById("main-image");
+        const prevButton = document.querySelector(".prev-btn");
+        const nextButton = document.querySelector(".next-btn");
+        const detailImages = document.querySelectorAll(".car_detail_image img");
+
+        // Function to update the main image
+        function updateImage(index) {
+            mainImage.src = images[index];
+        }
+
+        // Event listeners for carousel buttons
+        prevButton.addEventListener("click", () => {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            updateImage(currentIndex);
+        });
+
+        nextButton.addEventListener("click", () => {
+            currentIndex = (currentIndex + 1) % images.length;
+            updateImage(currentIndex);
+        });
+
+        // Event listeners for detail images
+        detailImages.forEach((img, index) => {
+            img.addEventListener("click", () => {
+                currentIndex = index;
+                updateImage(currentIndex);
+            });
+        });
+    </script>
+</body>
+</html>
