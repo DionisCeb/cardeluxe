@@ -1,6 +1,6 @@
 
 :root{
-    --btn-gradient: linear-gradient(90deg, #bf6514 0%, #5b4143 100%);
+    --btn-gradient: linear-gradient(90deg, #7891b8 0%, #5b4143 100%);
     --transparent-btn: rgba(255, 255, 255, 0.1);
     --btn-no-bg-color: #b2601a;
     --btn-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
