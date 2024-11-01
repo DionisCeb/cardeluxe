@@ -1,13 +1,13 @@
 :root {
-    --loan-box-bg: rgb(182, 182, 182);
-    --loan-text: #778db2;
+    --loan-box-bg: rgb(234 234 234);
 }
 .loan-calculator-box {
-    border: 6px solid var(--loan-box-bg);
+    border: 6px solid var(--title-color);
     padding: 40px;
     display: flex;
     gap: 20px;
     flex-direction: column;
+    max-width: 60%;
 }
 
 .loan-calculator-box div {
@@ -22,7 +22,7 @@
     align-items: center;
     gap: 20px;
     font-size: 25px;
-    color: var(--loan-text);
+    color: var(--title-color);
 }
 
 .loan-header i {
@@ -49,5 +49,5 @@
 }
 
 .loan-header span {
-    color: var(--loan-text);
+    color: var(--title-color);
 }
