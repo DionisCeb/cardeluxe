@@ -51,3 +51,18 @@
 .loan-header span {
     color: var(--title-color);
 }
+
+
+
+@media screen and (max-width: 1200px) {
+    .loan-calculator-box {
+      max-width: 100%;
+      padding: 20px;
+    }
+    .loan-header input {
+        padding: 10px;
+    }
+    .loan-box-header {
+        font-size: 20px;
+    }
+  }

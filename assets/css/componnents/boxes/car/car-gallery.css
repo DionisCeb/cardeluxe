@@ -9,6 +9,7 @@
 
 .main-image {
     position: relative;
+
 }
 
 .main-image img {
@@ -16,6 +17,9 @@
     height: 100%;
     border-radius: 12px;
     object-fit: cover;
+
+    animation: fadeIn 1s ease-in-out forwards; /* Duration and easing function */
+    opacity: 0;
 }
 
 .carousel-btn {
@@ -95,7 +99,26 @@
 }
 
 
-
+.car_detail_image:nth-child(1) {
+    animation: fadeIn 1s ease-in-out forwards; 
+    opacity: 0;
+}
+.car_detail_image:nth-child(2) {
+    animation: fadeIn 1.2s ease-in-out forwards; 
+    opacity: 0;
+}
+.car_detail_image:nth-child(3) {
+    animation: fadeIn 1.4s ease-in-out forwards; 
+    opacity: 0;
+}
+.car_detail_image:nth-child(4) {
+    animation: fadeIn 1.6s ease-in-out forwards; 
+    opacity: 0;
+}
+.car_detail_image:nth-child(5) {
+    animation: fadeIn 1.8s ease-in-out forwards; 
+    opacity: 0;
+}
 
 /* Media Query for screens 1200px or smaller */
 @media (max-width: 1200px) {
