@@ -27,7 +27,15 @@
 
 }
 
+/*main title*/
+.header-img h1{
+    color: white;
+}
 
+/*secondary title*/
+.filter-container h3 {
+    text-align: center;
+}
 .filter-form {
     display: flex;
     justify-content: space-between;

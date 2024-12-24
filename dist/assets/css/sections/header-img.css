@@ -17,6 +17,10 @@
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
+    background: rgba(39, 39, 39, 0.2);
+    padding: 30px;
+    width: 60%;
+    border-radius: 10px;
 }
 
 .header-overlay h1 {
