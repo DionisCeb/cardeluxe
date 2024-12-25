@@ -1,19 +1,9 @@
 /*components*/
 @import url(componnents/components.css);
- @import url(admin-interface/booking-list.css);
-@import url(admin-interface/form-admin-section.css);
-
-/*admin interface*/
-/* @import url(admin-interface/admin-interface.css); */
+@import url(admin-interface/admin-interface.css);
 
 /*sections*/
 @import url(sections/sections.css);
-
-/*animations*/
-
-
-/*utils*/
-@import url(utils/utils.css);
 
 /*general*/
 @import url(general/general.css);
