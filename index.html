@@ -119,42 +119,135 @@
             <span class="dot" onclick="currentSlide(3)"></span>
         </div>
     </section>
-
-
-    
-    
-    <section class="brands-section flex-center height30 ">
+<section class="latest-arrivals flex-center">
         <div class="structure">
-            <div class="brand-header block">
-                <h2>Explore Our Premium Brands</h2>
-                <a href="#" class="show-all-brands">Show All Brands &rarr;</a>
+            <div class="latest-arrivals-title block">
+                <h2>Latest Arrivals</h2>
             </div>
-            <div class="brands-container">
-                <div class="brand-item block">
-                    <img src="assets/img/logo/car-logo/audi-logo.png" alt="audi.logo">
-                    <p>Audi</p>
+            <div class="latest-arrivals-cars-container">
+                <div class="latest-arrival-car-card block">
+                    <h3>BMW M5 Competition</h3>
+                    <img src="assets/img/gallery/collection/bmw-m5.jpg" alt="BMW M5 Competition">
+                    <div class="car-details">
+                        <p>YEAR: <span>2022 (22)</span></p>
+                        <p>COLOUR: <span>Marina Bay Blue Metallic</span></p>
+                        <p>MILEAGE: <span>5,500</span></p>
+                        <p>PRICE: <span>£99,950</span></p>
+                    </div>
+                    <button class="btn-no-bg">View Vehicle</button>
                 </div>
-                <div class="brand-item block">
-                    <img src="assets/img/logo/car-logo/bmw-logo.png" alt="bmw.logo">
-                    <p>BMW</p>
+                <div class="latest-arrival-car-card block">
+                    <h3>Mercedes-Benz AMG GT</h3>
+                    <img src="assets/img/gallery/collection/mercedes-benz-amg-gt.jpg" alt="Mercedes-Benz AMG GT">
+                    <div class="car-details">
+                        <p>YEAR: <span>2021 (71)</span></p>
+                        <p>COLOUR: <span>Obsidian Black Metallic</span></p>
+                        <p>MILEAGE: <span>8,000</span></p>
+                        <p>PRICE: <span>£119,950</span></p>
+                    </div>
+                    <button class="btn-no-bg">View Vehicle</button>
                 </div>
-                <div class="brand-item block">
-                    <img src="assets/img/logo/car-logo/ford-logo.png" alt="ford.logo">
-                    <p>Ford</p>
+                <div class="latest-arrival-car-card block">
+                    <h3>Audi RS7</h3>
+                    <img src="assets/img/gallery/collection/audi-rs7.jpg" alt="Audi RS7">
+                    <div class="car-details">
+                        <p>YEAR: <span>2023 (23)</span></p>
+                        <p>COLOUR: <span>Nardo Grey</span></p>
+                        <p>MILEAGE: <span>3,200</span></p>
+                        <p>PRICE: <span>£84,950</span></p>
+                    </div>
+                    <button class="btn-no-bg">View Vehicle</button>
                 </div>
-                <div class="brand-item block">
-                    <img src="assets/img/logo/car-logo/volkswagen-logo.png" alt="volkswagen.logo">
-                    <p>Volkswagen</p>
+                <div class="latest-arrival-car-card block">
+                    <h3>Ford Mustang</h3>
+                    <img src="assets/img/gallery/collection/ford-mustang.jpg" alt="Ford Mustang">
+                    <div class="car-details">
+                        <p>YEAR: <span>2022 (22)</span></p>
+                        <p>COLOUR: <span>Grabber Yellow</span></p>
+                        <p>MILEAGE: <span>4,500</span></p>
+                        <p>PRICE: <span>£57,950</span></p>
+                    </div>
+                    <button class="btn-no-bg">View Vehicle</button>
                 </div>
-                <div class="brand-item block">
-                    <img src="assets/img/logo/car-logo/mercedes-logo.png" alt="mercedes.logo">
-                    <p>Mercedes</p>
+            </div>
+        </div>
+    </section>
+    <section class="search-car-section flex-center">
+        <div class="structure flex-col gap30">
+            <div class="search-car-header flex-column-center gap20 block">
+                <small>Our collection</small>
+                <h3>Find Your Dream Car Today</h3>
+            </div>
+            <div class="search-car-form-box ">
+                <div class="search-car-item block">
+                    <select name="makes" id="">
+                        <option value="make1">Any Makes</option>
+                        <option value="make1">make1</option>
+                        <option value="make2">make2</option>
+                        <option value="make3">make3</option>
+                        <option value="make4">make4</option>
+                        <option value="make5">make5</option>
+                    </select>
+            
+                    <select name="models" id="">
+                        <option value="model1">Any Models</option>
+                        <option value="model1">model1</option>
+                        <option value="model2">model2</option>
+                        <option value="model3">model3</option>
+                        <option value="model4">model4</option>
+                        <option value="model5">model5</option>
+                    </select>
+            
+                    <input type="text" value="Prices: All Prices" readonly>
+            
+                    <button class="btn-no-bg btn-search-form">
+                        <i class="fa fa-search"></i> Search Cars
+                    </button>
                 </div>
-                <!-- Repeat for other brands -->
             </div>
         </div>
     </section>
     
+    <section class="browse-by-type flex-center">
+        <div class="structure">
+            <div class="browse-title block">
+                <h2>Browse By Type</h2>
+                <a href="#" class="view-all">View All &rarr;</a>
+            </div>
+            <div class="types-container">
+                <div class="type-item block">
+                    <img src="assets/img/gallery/collection/types/suv.jpg" alt="SUV">
+                    <div class="type-label">
+                        <i class="fa fa-car"></i> SUV
+                    </div>
+                </div>
+                <div class="type-item block">
+                    <img src="assets/img/gallery/collection/types/sedan.jpg" alt="Sedan">
+                    <div class="type-label">
+                        <i class="fa fa-car"></i> Sedan
+                    </div>
+                </div>
+                <div class="type-item block">
+                    <img src="assets/img/gallery/collection/types/hatchback.jpg" alt="Hatchback">
+                    <div class="type-label">
+                        <i class="fa fa-car"></i> Hatchback
+                    </div>
+                </div>
+                <div class="type-item block">
+                    <img src="assets/img/gallery/collection/types/hybrid.jpg" alt="Hybrid">
+                    <div class="type-label">
+                        <i class="fa fa-car"></i> Hybrid
+                    </div>
+                </div>
+                <div class="type-item block">
+                    <img src="assets/img/gallery/collection/types/coupe.jpg" alt="Coupe">
+                    <div class="type-label">
+                        <i class="fa fa-car"></i> Coupe
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <div class="header_full_sec overflow-hidden flex-center-center block height30 ">
         <div class="logos">
             <div class="logos-slide ">
@@ -185,6 +278,41 @@
         
     </div>
 
+    <section class="brands-section flex-center height30 ">
+        <div class="structure">
+            <div class="brand-header block">
+                <h2>Explore Our Premium Brands</h2>
+                
+            </div>
+            <div class="brands-container">
+                <div class="brand-item block">
+                    <img src="assets/img/logo/car-logo/audi-logo.png" alt="audi.logo">
+                    <p>Audi</p>
+                </div>
+                <div class="brand-item block">
+                    <img src="assets/img/logo/car-logo/bmw-logo.png" alt="bmw.logo">
+                    <p>BMW</p>
+                </div>
+                <div class="brand-item block">
+                    <img src="assets/img/logo/car-logo/ford-logo.png" alt="ford.logo">
+                    <p>Ford</p>
+                </div>
+                <div class="brand-item block">
+                    <img src="assets/img/logo/car-logo/volkswagen-logo.png" alt="volkswagen.logo">
+                    <p>Volkswagen</p>
+                </div>
+                <div class="brand-item block">
+                    <img src="assets/img/logo/car-logo/mercedes-logo.png" alt="mercedes.logo">
+                    <p>Mercedes</p>
+                </div>
+                <!-- Repeat for other brands -->
+            </div>
+        </div>
+    </section>
+    
+    
+    
+   
     <!---Image Slider END-->
 
     <section class="section__why-us flex-center-center">
@@ -229,136 +357,12 @@
         </div>
     </section>
 
-    <section class="search-car-section flex-center">
-        <div class="structure flex-col gap30">
-            <div class="search-car-header flex-column-center gap20 block">
-                <small>Our collection</small>
-                <h3>Find Your Dream Car Today</h3>
-            </div>
-            <div class="search-car-form-box ">
-                <div class="search-car-item block">
-                    <select name="makes" id="">
-                        <option value="make1">Any Makes</option>
-                        <option value="make1">make1</option>
-                        <option value="make2">make2</option>
-                        <option value="make3">make3</option>
-                        <option value="make4">make4</option>
-                        <option value="make5">make5</option>
-                    </select>
-            
-                    <select name="models" id="">
-                        <option value="model1">Any Models</option>
-                        <option value="model1">model1</option>
-                        <option value="model2">model2</option>
-                        <option value="model3">model3</option>
-                        <option value="model4">model4</option>
-                        <option value="model5">model5</option>
-                    </select>
-            
-                    <input type="text" value="Prices: All Prices" readonly>
-            
-                    <button class="btn btn-search-form">
-                        <i class="fa fa-search"></i> Search Cars
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
+   
 
-    <section class="latest-arrivals flex-center">
-        <div class="structure">
-            <div class="latest-arrivals-title block">
-                <h2>Latest Arrivals</h2>
-            </div>
-            <div class="latest-arrivals-cars-container">
-                <div class="latest-arrival-car-card block">
-                    <h3>BMW M5 Competition</h3>
-                    <img src="assets/img/gallery/collection/bmw-m5.jpg" alt="BMW M5 Competition">
-                    <div class="car-details">
-                        <p>YEAR: <span>2022 (22)</span></p>
-                        <p>COLOUR: <span>Marina Bay Blue Metallic</span></p>
-                        <p>MILEAGE: <span>5,500</span></p>
-                        <p>PRICE: <span>£99,950</span></p>
-                    </div>
-                    <button class="btn-view-vehicle">View Vehicle</button>
-                </div>
-                <div class="latest-arrival-car-card block">
-                    <h3>Mercedes-Benz AMG GT</h3>
-                    <img src="assets/img/gallery/collection/mercedes-benz-amg-gt.jpg" alt="Mercedes-Benz AMG GT">
-                    <div class="car-details">
-                        <p>YEAR: <span>2021 (71)</span></p>
-                        <p>COLOUR: <span>Obsidian Black Metallic</span></p>
-                        <p>MILEAGE: <span>8,000</span></p>
-                        <p>PRICE: <span>£119,950</span></p>
-                    </div>
-                    <button class="btn-view-vehicle">View Vehicle</button>
-                </div>
-                <div class="latest-arrival-car-card block">
-                    <h3>Audi RS7</h3>
-                    <img src="assets/img/gallery/collection/audi-rs7.jpg" alt="Audi RS7">
-                    <div class="car-details">
-                        <p>YEAR: <span>2023 (23)</span></p>
-                        <p>COLOUR: <span>Nardo Grey</span></p>
-                        <p>MILEAGE: <span>3,200</span></p>
-                        <p>PRICE: <span>£84,950</span></p>
-                    </div>
-                    <button class="btn-view-vehicle">View Vehicle</button>
-                </div>
-                <div class="latest-arrival-car-card block">
-                    <h3>Ford Mustang</h3>
-                    <img src="assets/img/gallery/collection/ford-mustang.jpg" alt="Ford Mustang">
-                    <div class="car-details">
-                        <p>YEAR: <span>2022 (22)</span></p>
-                        <p>COLOUR: <span>Grabber Yellow</span></p>
-                        <p>MILEAGE: <span>4,500</span></p>
-                        <p>PRICE: <span>£57,950</span></p>
-                    </div>
-                    <button class="btn-view-vehicle">View Vehicle</button>
-                </div>
-            </div>
-        </div>
-    </section>
+    
 
-    <section class="browse-by-type flex-center">
-        <div class="structure">
-            <div class="browse-title block">
-                <h2>Browse By Type</h2>
-                <a href="#" class="view-all">View All &rarr;</a>
-            </div>
-            <div class="types-container">
-                <div class="type-item block">
-                    <img src="assets/img/gallery/collection/types/suv.jpg" alt="SUV">
-                    <div class="type-label">
-                        <i class="fa fa-car"></i> SUV
-                    </div>
-                </div>
-                <div class="type-item block">
-                    <img src="assets/img/gallery/collection/types/sedan.jpg" alt="Sedan">
-                    <div class="type-label">
-                        <i class="fa fa-car"></i> Sedan
-                    </div>
-                </div>
-                <div class="type-item block">
-                    <img src="assets/img/gallery/collection/types/hatchback.jpg" alt="Hatchback">
-                    <div class="type-label">
-                        <i class="fa fa-car"></i> Hatchback
-                    </div>
-                </div>
-                <div class="type-item block">
-                    <img src="assets/img/gallery/collection/types/hybrid.jpg" alt="Hybrid">
-                    <div class="type-label">
-                        <i class="fa fa-car"></i> Hybrid
-                    </div>
-                </div>
-                <div class="type-item block">
-                    <img src="assets/img/gallery/collection/types/coupe.jpg" alt="Coupe">
-                    <div class="type-label">
-                        <i class="fa fa-car"></i> Coupe
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
+   
 
     <!--Testimonials-->
     <section class="slider-product flex-center">

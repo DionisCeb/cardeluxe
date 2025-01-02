@@ -7,7 +7,7 @@
 
 .brands-section .brand-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-bottom: 20px;
 }
@@ -15,13 +15,12 @@
 .brands-section h2 {
     font-size: 28px;
     font-weight: bold;
-    color: #1c1e21;
     margin: 0;
 }
 
 .show-all-brands {
     font-size: 16px;
-    color: #007bff;
+    color: var(--accent-text-color);
     text-decoration: none;
     font-weight: 500;
     display: flex;

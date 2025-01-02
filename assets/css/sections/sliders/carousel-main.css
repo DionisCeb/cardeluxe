@@ -76,7 +76,7 @@
 
   .promoted-product__title h1 {
     font-size: 50px;
-    color: orange;
+    color: var(--btn-no-bg-color);
   }
 
   .promoted-product__description p {
@@ -99,6 +99,8 @@
   animation: fadeIn 3s ease-in-out forwards;
 }
 
+
+
 .header-box__buttons a {
   width: 50%;
 }
@@ -111,6 +113,8 @@
 .header-box__buttons a:last-of-type {
   opacity: 0;
   animation: fadeIn 5s ease-in-out forwards;
+  color: white;
+  border: 3px solid white;
 }
 
 @media only screen and (max-width: 700px) {

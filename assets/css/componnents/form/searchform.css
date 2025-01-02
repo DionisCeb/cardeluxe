@@ -1,3 +1,7 @@
+section.search-car-section {
+    min-height: 30dvh;
+    align-items: center;
+}
 .search-car-form-box {
     display: flex;
     justify-content: center;
@@ -17,7 +21,7 @@
 
 .search-car-item select,
 .search-car-item input {
-    padding: 10px 15px;
+    padding: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 14px;
@@ -37,22 +41,20 @@
 }
 
 .btn-search-form {
-    padding: 10px 30px;
+    
     font-size: 16px;
-    width: 100%;
+    width: 50%;
     font-weight: bold;
     border: none;
     border-radius: 25px !important;
     cursor: pointer;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 5px;
     transition: background-color 0.3s;
 }
 
-.btn-search-form:hover {
-    background-color: #357ABD;
-}
 
 .fa-search {
     font-size: 16px;
@@ -70,6 +72,12 @@ select::-ms-expand {
 }
 
 
+@media (min-width: 1760px) {
+    .search-car-form-box  {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
 
 @media (max-width: 1060px) {
     .search-car-item {

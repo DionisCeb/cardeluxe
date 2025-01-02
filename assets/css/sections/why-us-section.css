@@ -26,9 +26,9 @@
     animation: fadeIn 0.5s forwards;
 }
 
-.why-us__item--subtitle {
-    color: #7b571f;
-
+.why-us__item >*>* {
+    color: var(--accent-text-color);
+    font-weight: bolder;
 }
 
 

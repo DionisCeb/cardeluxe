@@ -72,7 +72,7 @@
     font-size: var(--font-size-large);
     line-height: var(--line-height-large);
     font-weight: 700;
-    color: orange !important;
+    color: var(--accent-text-color) !important;
     font-family: var(--font-secondary); /* Secondary font for a distinct style */
     text-transform: uppercase; /* Added uppercase for a modern touch */
     transition: transform 0.3s ease-in-out; /* Smooth transition effect */
